@@ -3,5 +3,15 @@
  "http://java.sun.com/dtd/web-app_2_3.dtd" >
 
 <web-app>
-  <display-name>Archetype Created Web Application</display-name>
+	<servlet>
+		<servlet-name>LoginDemo</servlet-name>
+		<servlet-class>com.wipro.devops.LoginDemo</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginDemo</servlet-name>
+		<url-pattern>/LoginDemo</url-pattern>
+	</servlet-mapping>
+	<session-config>
+		<session-timeout>30</session-timeout>
+	</session-config>
 </web-app>

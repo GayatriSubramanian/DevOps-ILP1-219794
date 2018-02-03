@@ -4,7 +4,7 @@
 <title>Login Demo with JSP</title>
 </head>
 <body>
-	<form method="post" action="LoginDemo">
+	<form method="post" action="ResetPassword">
 		<table border="1">
 			<thead>
 				<tr>
@@ -17,16 +17,18 @@
 					<td><input type="text" name="username" required /></td>
 				</tr>
 				<tr>
-					<td>Old Password</td>
-					<td><input type="password" name="oldpassword" required /></td>
-				</tr>
-				<tr>
 					<td>New Password</td>
 					<td><input type="password" name="newpassword" required /></td>
 				</tr>
 				<tr>
-					<td colspan="2"><input type="submit" name="submit"
-						value="Submit" /></td>
+					<td>Confirm New Password</td>
+					<td><input type="password" name="confirmnewpassword" required /></td>
+				</tr>
+				<tr>
+					<td colspan="2"> &nbsp;
+						<input type="submit" name="submit" value="Submit" /> &nbsp;
+						<input type="reset" name="reset" value="Clear" />
+					</td>
 				</tr>
 			</tbody>
 		</table>

@@ -21,10 +21,12 @@
 					<td><input type="password" name="password" required /></td>
 				</tr>
 				<tr>
-					<td colspan="2"><input type="submit" name="login"
-						value="Login" /> &nbsp; <input type="submit"
-						name="changepassword" value="Reset Password" /> &nbsp; <input
-						type="reset" name="reset" value="Clear" /></td>
+					<td colspan="2"> &nbsp;
+						<input type="submit" name="register" value="Register" /> &nbsp; 
+						<input type="submit" name="login" value="Login" /> &nbsp; 
+						<input type="submit" name="resetpassword" value="Reset Password" /> &nbsp;
+						<input type="reset" name="reset" value="Clear" /> &nbsp;
+					</td>
 				</tr>
 			</tbody>
 		</table>

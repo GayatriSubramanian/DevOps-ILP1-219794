@@ -3,7 +3,6 @@ package com.wipro.devops;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import javax.servlet.ServletException;
@@ -18,6 +17,41 @@ public class LoginDemo extends HttpServlet {
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 
+		if (request.getParameter("register") != null) {
+
+			response.setContentType("text/html");
+
+			PrintWriter out = response.getWriter();
+			String username = request.getParameter("username");
+			String password = request.getParameter("password");
+			try {
+				Connection conn = SQLConnection.getConnection();
+				PreparedStatement query = conn
+						.prepareStatement("SELECT db_username FROM logintable WHERE db_username=? ");
+				query.setString(1, username);
+				ResultSet resultSetQuery = query.executeQuery();
+
+				if (!resultSetQuery.next()) {
+					PreparedStatement post = conn
+							.prepareStatement("INSERT INTO logintable (db_username,db_password) VALUES ('" + username
+									+ "' , '" + password + "')");
+
+					int resultSetPost = post.executeUpdate();
+
+					if (resultSetPost == 1) {
+						out.println("Registered Successfully !!");
+					} else {
+						out.println("Registration Failed... Please Try Again !!");
+					}
+				} else {
+					out.println("Username Already Exist !!");
+				}
+
+			} catch (Exception e) {
+				e.printStackTrace();
+			}
+		}
+
 		if (request.getParameter("login") != null) {
 
 			response.setContentType("text/html");
@@ -26,8 +60,7 @@ public class LoginDemo extends HttpServlet {
 			String username = request.getParameter("username");
 			String password = request.getParameter("password");
 			try {
-				Class.forName("com.mysql.jdbc.Driver");
-				Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/logindemo", "root", "1234");
+				Connection conn = SQLConnection.getConnection();
 
 				PreparedStatement query = conn.prepareStatement(
 						"SELECT db_username,db_password FROM logintable WHERE db_username=? AND db_password=?");
@@ -37,36 +70,17 @@ public class LoginDemo extends HttpServlet {
 				ResultSet resultSetQuery = query.executeQuery();
 
 				if (resultSetQuery.next()) {
-					out.println("Correct login credentials");
+					out.println("Login Successful !!");
 				} else {
-					
 					out.println("Incorrect Username Or Password Entered.. Please Try Again!!");
-
-/*					PreparedStatement post = conn
-							.prepareStatement("INSERT INTO logintable (db_username,db_password) VALUES ('" + username
-									+ "' , '" + password + "')");
-
-					int resultSetPost = post.executeUpdate();
-
-					if (resultSetPost == 1) {
-						out.println("User Does not Exist and added!!");
-
-					}*/
-
 				}
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
 		}
 
-		if (request.getParameter("changepassword") != null) {
-			
-/*			response.setContentType("text/html");
-			PrintWriter out = response.getWriter();
-			out.println("Page Under Construction");*/
-			
-			response.sendRedirect("index2.jsp");
-
+		if (request.getParameter("resetpassword") != null) {
+			response.sendRedirect("ResetPassword.jsp");
 		}
 	}
 }

@@ -1,7 +1,3 @@
-<!DOCTYPE web-app PUBLIC
- "-//Sun Microsystems, Inc.//DTD Web Application 2.3//EN"
- "http://java.sun.com/dtd/web-app_2_3.dtd" >
-
 <web-app>
 	<servlet>
 		<servlet-name>LoginDemo</servlet-name>
@@ -10,6 +6,14 @@
 	<servlet-mapping>
 		<servlet-name>LoginDemo</servlet-name>
 		<url-pattern>/LoginDemo</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>ResetPassword</servlet-name>
+		<servlet-class>com.wipro.devops.ResetPassword</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ResetPassword</servlet-name>
+		<url-pattern>/ResetPassword</url-pattern>
 	</servlet-mapping>
 	<session-config>
 		<session-timeout>30</session-timeout>

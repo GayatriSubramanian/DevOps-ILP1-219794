@@ -33,6 +33,19 @@
 			<version>3.0.1</version>
 			<scope>provided</scope>
 		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-java</artifactId>
+			<version>3.8.1</version>
+		</dependency>
+		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-server-standalone -->
+		<dependency>
+			<groupId>org.seleniumhq.selenium</groupId>
+			<artifactId>selenium-server-standalone</artifactId>
+			<version>2.39.0</version>
+		</dependency>
+
 	</dependencies>
 	<build>
 		<finalName>DevOps-ILP1-219794</finalName>

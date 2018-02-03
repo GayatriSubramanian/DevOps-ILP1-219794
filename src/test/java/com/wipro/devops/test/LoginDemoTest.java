@@ -59,4 +59,24 @@ public class LoginDemoTest extends Mockito {
 
 	}
 
+	@Test
+	public void LoginDemoTest_3() throws ServletException, IOException {
+		LoginDemo loginDemo = new LoginDemo();
+		HttpServletRequest request = mock(HttpServletRequest.class);
+		HttpServletResponse response = mock(HttpServletResponse.class);
+
+		when(request.getParameter("username")).thenReturn("Rahulkumar");
+		when(request.getParameter("password")).thenReturn("Rahulkumar1");
+		when(request.getParameter("login")).thenReturn("login");
+
+		StringWriter stringWriter = new StringWriter();
+		PrintWriter writer = new PrintWriter(stringWriter);
+
+		when(response.getWriter()).thenReturn(writer);
+		
+		loginDemo.doPost(request, response);
+
+		assertTrue(stringWriter.toString().contains("Incorrect Username Or Password Entered"));
+
+	}
 }

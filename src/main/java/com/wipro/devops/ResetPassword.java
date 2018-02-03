@@ -51,7 +51,7 @@ public class ResetPassword extends HttpServlet {
 
 						}
 					} else {
-						out.println("New and Confirm Password Does Not Match!!");
+						out.println("New and Confirm Password Does Not Match.. Please Try Again!!");
 					}
 				} else {
 					out.println("Username Does Not Exist.. Please Try Again!!");

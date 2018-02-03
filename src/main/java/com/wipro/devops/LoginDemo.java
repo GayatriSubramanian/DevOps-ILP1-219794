@@ -72,7 +72,7 @@ public class LoginDemo extends HttpServlet {
 				if (resultSetQuery.next()) {
 					out.println("Login Successful !!");
 				} else {
-					out.println("Incorrect Username Or Password Entered.. Please Try Again!!");
+					out.println("Incorrect Username Or Password Entered.. Please Try Again !!");
 				}
 			} catch (Exception e) {
 				e.printStackTrace();

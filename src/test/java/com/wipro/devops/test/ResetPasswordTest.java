@@ -1,4 +1,4 @@
-package com.wipro.devops;
+package com.wipro.devops.test;
 
 import static org.junit.Assert.assertTrue;
 
@@ -12,6 +12,8 @@ import javax.servlet.http.HttpServletResponse;
 
 import org.junit.Test;
 import org.mockito.Mockito;
+
+import com.wipro.devops.ResetPassword;
 
 public class ResetPasswordTest extends Mockito {
 

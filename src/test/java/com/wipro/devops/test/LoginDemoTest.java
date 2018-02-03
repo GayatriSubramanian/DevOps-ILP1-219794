@@ -1,4 +1,4 @@
-package com.wipro.devops;
+package com.wipro.devops.test;
 
 import static org.junit.Assert.*;
 

@@ -34,7 +34,7 @@ public class LoginDemoTest extends Mockito {
 		
 		loginDemo.doPost(request, response);
 
-		assertTrue(stringWriter.toString().contains("Username Already Exis t"));
+		assertTrue(stringWriter.toString().contains("Username Already Exist"));
 
 	}
 

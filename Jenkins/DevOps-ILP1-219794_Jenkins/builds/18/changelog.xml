@@ -1,0 +1,22 @@
+commit b6d610f1972613b87e707527ecf977c79ee387bd
+tree 831eb50f238b8bbf8a03ee52b7262626f0ecf9db
+parent ff708169aba599f066215ea4af5ddf26c3e314e0
+author Rahulkumar Rakhonde <rahul.rakhonde@gmail.com> 2018-02-03 23:21:53 -0600
+committer Rahulkumar Rakhonde <rahul.rakhonde@gmail.com> 2018-02-03 23:21:53 -0600
+
+    Commit for Jenkins Build 02/03
+
+
+
+:100644 100644 d742d2dee70afeae68f7bd6e58e819efbaab8c4f ab7ec8b2d75e558746f3e07f1337c7edefc3feec M	src/test/java/com/wipro/devops/test/LoginDemoTest.java
+:100644 000000 3b71738e804faf4e1ba88509189b13333915bb4f 0000000000000000000000000000000000000000 D	target/classes/com/wipro/devops/LoginDemo.class
+:100644 000000 84d633de4247a63fa675f0a4477c82117398d90d 0000000000000000000000000000000000000000 D	target/classes/com/wipro/devops/ResetPassword.class
+:100644 000000 85bdb02bea8ab886f4a36e93cc4c3c9c7288b727 0000000000000000000000000000000000000000 D	target/classes/com/wipro/devops/SQLConnection.class
+:100644 000000 d7d7d1c34a24adbe54844845dc9c781b0e81504d 0000000000000000000000000000000000000000 D	target/m2e-wtp/web-resources/META-INF/MANIFEST.MF
+:100644 000000 e017e0fbd6dc9f808dad58495300140d0f7c9031 0000000000000000000000000000000000000000 D	target/m2e-wtp/web-resources/META-INF/maven/com.wipro.devops/DevOps-ILP1-219794/pom.properties
+:100644 000000 96d40db610185dd4292df8304f33051cffdb47b1 0000000000000000000000000000000000000000 D	target/m2e-wtp/web-resources/META-INF/maven/com.wipro.devops/DevOps-ILP1-219794/pom.xml
+:100644 000000 1d3f41bfc44ef6f0281320d1b4d4c61b75f48de4 0000000000000000000000000000000000000000 D	target/test-classes/com/wipro/devops/test/LoginDemoTest.class
+:100644 000000 9301cd8b1e9e1d54ffcbebb6be132a83b36233db 0000000000000000000000000000000000000000 D	target/test-classes/com/wipro/devops/test/ResetPasswordTest.class
+:100644 000000 83e2f90d5f048dde83273830c19373f38fb4b312 0000000000000000000000000000000000000000 D	target/test-classes/com/wipro/devops/test/SQLConnectionTest.class
+:100644 000000 9257b78d5aec92932378b779f8d2bec5e06dd1b4 0000000000000000000000000000000000000000 D	target/test-classes/com/wipro/devops/test/SeleniumLoginDemoTest.class
+:100644 000000 62bb044e4dbef018bd9020716d37bf70555e54e6 0000000000000000000000000000000000000000 D	target/test-classes/com/wipro/devops/test/SeleniumResetPasswordTest.class

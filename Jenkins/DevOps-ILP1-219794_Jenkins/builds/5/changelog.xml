@@ -1,0 +1,21 @@
+commit 7e015ae1b3a9625221d6ac23081458fcaca02fa8
+tree 5fdfa9b6c14856f1171da89c4eeadef101b2df03
+parent 0087f2af870d71bb428bcc8ee78742cedf1b09bf
+author Rahulkumar Rakhonde <rahul.rakhonde@gmail.com> 2018-02-03 18:46:46 -0600
+committer Rahulkumar Rakhonde <rahul.rakhonde@gmail.com> 2018-02-03 18:46:46 -0600
+
+    Commit for Jenkins Build 02/03
+
+
+
+:100644 100644 7fece11e18016253210a3a0dc0e74ade98dd1924 a90520643a59ab8abcfaf770d70a15281f68e232 M	README.md
+:100644 100644 f959ce37dfbfe1783563324e5b2c29ed1bfe8744 aa7a12975abe3badeb3e92edabf13b3613a05561 M	target/surefire-reports/TEST-com.wipro.devops.test.LoginDemoTest.xml
+:100644 100644 2d00b60b43c1c0d83382462e2540a75818301c5f 983035d473789149a92f67f343c4be2556e70121 M	target/surefire-reports/TEST-com.wipro.devops.test.ResetPasswordTest.xml
+:100644 100644 01530f846c530367667b3257d4defc2a26c210ca 20d63f8a21d69d223eb003330393d01a7b580634 M	target/surefire-reports/TEST-com.wipro.devops.test.SQLConnectionTest.xml
+:100644 100644 0021799302073512de08683752bedfe3e497853d 93f28b86c73fa794f850b3146fe37ae50711ca03 M	target/surefire-reports/TEST-com.wipro.devops.test.SeleniumLoginDemoTest.xml
+:100644 100644 e86fa01e9593c30ea0a51d8a9f742c1851371ba2 559d9134706be8fc8631726aa167b8b81ce17403 M	target/surefire-reports/TEST-com.wipro.devops.test.SeleniumResetPasswordTest.xml
+:100644 100644 719e593b009c06e662bea5a2a738d17be3bf3043 5abf54dfaf19ce8bbb04ece3da41675a283afbdf M	target/surefire-reports/com.wipro.devops.test.LoginDemoTest.txt
+:100644 100644 c2990bfad32e62dac862773a092be45e23f1bb0f 6999e671bb7bed9ae0fe766dac7ab46141b40122 M	target/surefire-reports/com.wipro.devops.test.ResetPasswordTest.txt
+:100644 100644 a1c3b1bbecaaaf1d841c08458a9ce19a862a8802 0c17307d190fb04b2af0ee1f6487fc05ebbafafe M	target/surefire-reports/com.wipro.devops.test.SQLConnectionTest.txt
+:100644 100644 a8429925c9fe4831cb4e5529b2036bcff3b136a1 0f6b7c16a691f194de94c416482ab0b72d7af5ac M	target/surefire-reports/com.wipro.devops.test.SeleniumLoginDemoTest.txt
+:100644 100644 16b41dca2e33d5e04ac07225e9f8e8fdeb700a6f 74f6255fb3537b9f829d78cdaebd0f21cd3b56f1 M	target/surefire-reports/com.wipro.devops.test.SeleniumResetPasswordTest.txt

@@ -1,0 +1,47 @@
+commit de45483f05335a3af41ffa69612736ca75e6fd8c
+tree b193e7607ffaa149b088e318cd0259bcc66eaee5
+parent 6460cf6dc9e683a537f3120acf26790f4a25dd8c
+author Rahulkumar Rakhonde <rahul.rakhonde@gmail.com> 2018-03-10 16:10:24 -0600
+committer Rahulkumar Rakhonde <rahul.rakhonde@gmail.com> 2018-03-10 16:10:24 -0600
+
+    Modified Unit Case
+
+
+
+:100644 100644 ab7ec8b2d75e558746f3e07f1337c7edefc3feec 434c1ebd49dda63fe0f42f5c7034fc6cf261a656 M	src/test/java/com/wipro/devops/test/LoginDemoTest.java
+:000000 100644 0000000000000000000000000000000000000000 50247d1e24aaa0a8e2f3fcad2e031e0f282b4ef7 A	target/classes/com/wipro/devops/LoginDemo.class
+:000000 100644 0000000000000000000000000000000000000000 9d75612135b404d58c5b492687cda5e262021fc1 A	target/classes/com/wipro/devops/ResetPassword.class
+:000000 100644 0000000000000000000000000000000000000000 5b06486206d66d9b998d48ef33769e87f65b1198 A	target/classes/com/wipro/devops/SQLConnection.class
+:000000 100644 0000000000000000000000000000000000000000 d7d7d1c34a24adbe54844845dc9c781b0e81504d A	target/m2e-wtp/web-resources/META-INF/MANIFEST.MF
+:000000 100644 0000000000000000000000000000000000000000 97a09f5e72638fddcd25df942e2c2899a9f27065 A	target/m2e-wtp/web-resources/META-INF/maven/com.wipro.devops/DevOps-ILP1-219794/pom.properties
+:000000 100644 0000000000000000000000000000000000000000 96d40db610185dd4292df8304f33051cffdb47b1 A	target/m2e-wtp/web-resources/META-INF/maven/com.wipro.devops/DevOps-ILP1-219794/pom.xml
+:000000 100644 0000000000000000000000000000000000000000 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 A	target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst
+:000000 100644 0000000000000000000000000000000000000000 0ecd8822ff4f3c44aae4bd58bb7166804adecc56 A	target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst
+:000000 100644 0000000000000000000000000000000000000000 e69de29bb2d1d6434b8b29ae775ad8c2e48c5391 A	target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst
+:000000 100644 0000000000000000000000000000000000000000 da8dbcc13382d8207d06917db4880313b777d9cb A	target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst
+:000000 100644 0000000000000000000000000000000000000000 69ee6625e734af0c205d02fa2e18ecaeb31dafe5 A	target/surefire-reports/TEST-com.wipro.devops.test.LoginDemoTest.xml
+:000000 100644 0000000000000000000000000000000000000000 3e5d543affa706f6baf25efc7c14d9e9bcef70aa A	target/surefire-reports/TEST-com.wipro.devops.test.ResetPasswordTest.xml
+:000000 100644 0000000000000000000000000000000000000000 a2369f50cfd0ddbdba088cd1059f7c534404fcf1 A	target/surefire-reports/TEST-com.wipro.devops.test.SQLConnectionTest.xml
+:000000 100644 0000000000000000000000000000000000000000 470553e5aae9cee74a14e30aed174720ba2ad2de A	target/surefire-reports/TEST-com.wipro.devops.test.SeleniumLoginDemoTest.xml
+:000000 100644 0000000000000000000000000000000000000000 2a7cace8268efb8926b3522bbd0cd96f66414e99 A	target/surefire-reports/TEST-com.wipro.devops.test.SeleniumResetPasswordTest.xml
+:000000 100644 0000000000000000000000000000000000000000 daf7e3f46a8c14729d781014f0b830c8bca3b161 A	target/surefire-reports/com.wipro.devops.test.LoginDemoTest.txt
+:000000 100644 0000000000000000000000000000000000000000 10bb9b3ec8ce9dc879719e71f20c9757c2d41339 A	target/surefire-reports/com.wipro.devops.test.ResetPasswordTest.txt
+:000000 100644 0000000000000000000000000000000000000000 7c0ca4660961944ea75a5c496182ade7c2f722d8 A	target/surefire-reports/com.wipro.devops.test.SQLConnectionTest.txt
+:000000 100644 0000000000000000000000000000000000000000 1ce14e75e885e9e18aa752bc5554f8b144dfc42c A	target/surefire-reports/com.wipro.devops.test.SeleniumLoginDemoTest.txt
+:000000 100644 0000000000000000000000000000000000000000 e59b65dc457c7e6eaf689a3eb6c815d169e3c6c3 A	target/surefire-reports/com.wipro.devops.test.SeleniumResetPasswordTest.txt
+:000000 100644 0000000000000000000000000000000000000000 ad857ca831ad0696c1aca41a579f544eb30c5cdf A	target/test-classes/com/wipro/devops/test/LoginDemoTest.class
+:000000 100644 0000000000000000000000000000000000000000 9ac692dcc65bebde4c883a3f99c7827f5cb76b69 A	target/test-classes/com/wipro/devops/test/ResetPasswordTest.class
+:000000 100644 0000000000000000000000000000000000000000 4ea25219720482194066026af4ca9d86b367309f A	target/test-classes/com/wipro/devops/test/SQLConnectionTest.class
+:000000 100644 0000000000000000000000000000000000000000 1b4294d9cdd9145a182700eceeab91719f84ae9b A	target/test-classes/com/wipro/devops/test/SeleniumLoginDemoTest.class
+:000000 100644 0000000000000000000000000000000000000000 8539732dfce40f427681b1e600c4d94ae143d631 A	target/test-classes/com/wipro/devops/test/SeleniumResetPasswordTest.class
+commit 6460cf6dc9e683a537f3120acf26790f4a25dd8c
+tree 613d532211bdb60126fae0bfbb902ee671aa8926
+parent 1798b0af8f3da687172231b38299643dc173fabd
+author Rahulkumar Rakhonde <rahul.rakhonde@gmail.com> 2018-02-04 10:06:23 -0600
+committer Rahulkumar Rakhonde <rahul.rakhonde@gmail.com> 2018-02-04 10:06:23 -0600
+
+    Adding Screenshots 02/04
+
+
+
+:100644 100644 4adc24f8c0bd0818548dec39dc258fb758193e97 7690ef3d219d156fa6388db7cd07b7365010236b M	Screenshots/Project Execution.docx

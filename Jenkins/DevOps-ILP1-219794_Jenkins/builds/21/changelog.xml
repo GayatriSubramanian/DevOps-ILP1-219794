@@ -1,0 +1,21 @@
+commit 8cc32653d9cf7af55908228c8bb7acaa506d05e1
+tree f4c95f454801f9fd24b5533f94ab3fe7a55f718d
+parent de45483f05335a3af41ffa69612736ca75e6fd8c
+author Rahulkumar Rakhonde <rahul.rakhonde@gmail.com> 2018-03-10 16:14:14 -0600
+committer Rahulkumar Rakhonde <rahul.rakhonde@gmail.com> 2018-03-10 16:14:14 -0600
+
+    Modified Unit Case
+
+
+
+:100644 100644 434c1ebd49dda63fe0f42f5c7034fc6cf261a656 ab7ec8b2d75e558746f3e07f1337c7edefc3feec M	src/test/java/com/wipro/devops/test/LoginDemoTest.java
+:100644 100644 69ee6625e734af0c205d02fa2e18ecaeb31dafe5 7394b1682eb919ba4a093a68ca763d9e46259624 M	target/surefire-reports/TEST-com.wipro.devops.test.LoginDemoTest.xml
+:100644 100644 3e5d543affa706f6baf25efc7c14d9e9bcef70aa 5aa815caf682f632eb6138b870d96b7b86384332 M	target/surefire-reports/TEST-com.wipro.devops.test.ResetPasswordTest.xml
+:100644 100644 a2369f50cfd0ddbdba088cd1059f7c534404fcf1 d52e74b574fab99edff7b62b568251ed66bb00a5 M	target/surefire-reports/TEST-com.wipro.devops.test.SQLConnectionTest.xml
+:100644 100644 470553e5aae9cee74a14e30aed174720ba2ad2de 632014552fde25a23156bd123ff54d850d6b7df4 M	target/surefire-reports/TEST-com.wipro.devops.test.SeleniumLoginDemoTest.xml
+:100644 100644 2a7cace8268efb8926b3522bbd0cd96f66414e99 cd626b6c164064e230c91ab60093f9ed31aa87f9 M	target/surefire-reports/TEST-com.wipro.devops.test.SeleniumResetPasswordTest.xml
+:100644 100644 daf7e3f46a8c14729d781014f0b830c8bca3b161 6401f9d497ec054b4220906a84b629f3b23fc809 M	target/surefire-reports/com.wipro.devops.test.LoginDemoTest.txt
+:100644 100644 10bb9b3ec8ce9dc879719e71f20c9757c2d41339 3fbc5590821a84b32ead9f31ad3492bf3868fdc9 M	target/surefire-reports/com.wipro.devops.test.ResetPasswordTest.txt
+:100644 100644 1ce14e75e885e9e18aa752bc5554f8b144dfc42c 42155ae17c34e7629906e609148aa71eaed9db74 M	target/surefire-reports/com.wipro.devops.test.SeleniumLoginDemoTest.txt
+:100644 100644 e59b65dc457c7e6eaf689a3eb6c815d169e3c6c3 f3f5839c5c9dedd70fb764fcfdac4ee882ea62f7 M	target/surefire-reports/com.wipro.devops.test.SeleniumResetPasswordTest.txt
+:100644 100644 ad857ca831ad0696c1aca41a579f544eb30c5cdf 033b7b6ea7fc5e63fa59f932cdb10f33fdf79cbc M	target/test-classes/com/wipro/devops/test/LoginDemoTest.class

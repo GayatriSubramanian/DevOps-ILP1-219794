@@ -1,0 +1,156 @@
+Started by user [8mha:////4NdoM+s3M8DGol1f+l7L3SMwji7kg8NrUGWZ7HAv5x2hAAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace C:\Users\PC-RAHUL\.jenkins\workspace\DevOps-ILP1-219794_Jenkins
+ > git.exe rev-parse --is-inside-work-tree # timeout=10
+Fetching changes from the remote Git repository
+ > git.exe config remote.origin.url C:\Users\PC-RAHUL\Desktop\Devops\DevOps-ILP1-219794 # timeout=10
+Fetching upstream changes from C:\Users\PC-RAHUL\Desktop\Devops\DevOps-ILP1-219794
+ > git.exe --version # timeout=10
+ > git.exe fetch --tags --progress C:\Users\PC-RAHUL\Desktop\Devops\DevOps-ILP1-219794 +refs/heads/*:refs/remotes/origin/*
+ > git.exe rev-parse "refs/remotes/origin/master^{commit}" # timeout=10
+ > git.exe rev-parse "refs/remotes/origin/origin/master^{commit}" # timeout=10
+Checking out Revision 6d579983d9a122ad44b449a79307750d600cc1a1 (refs/remotes/origin/master)
+ > git.exe config core.sparsecheckout # timeout=10
+ > git.exe checkout -f 6d579983d9a122ad44b449a79307750d600cc1a1
+Commit message: "Commit for Jenkins Build 02/03"
+ > git.exe rev-list --no-walk 8dda1a5958b54e034947f6491785c34c0f9ba620 # timeout=10
+[DevOps-ILP1-219794_Jenkins] $ cmd /c call C:\Users\PC-RAHUL\AppData\Local\Temp\jenkins2114149079720664317.bat
+
+C:\Users\PC-RAHUL\.jenkins\workspace\DevOps-ILP1-219794_Jenkins>mvn clean install 
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] ------------------------------------------------------------------------
+[INFO] Building DevOps-ILP1-219794 Maven Webapp 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[WARNING] The POM for org.seleniumhq.selenium:selenium-server-standalone:jar:2.39.0 is missing, no dependency information available
+[INFO] 
+[INFO] --- maven-clean-plugin:2.5:clean (default-clean) @ DevOps-ILP1-219794 ---
+[INFO] Deleting C:\Users\PC-RAHUL\.jenkins\workspace\DevOps-ILP1-219794_Jenkins\target
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ DevOps-ILP1-219794 ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Users\PC-RAHUL\.jenkins\workspace\DevOps-ILP1-219794_Jenkins\src\main\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ DevOps-ILP1-219794 ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 3 source files to C:\Users\PC-RAHUL\.jenkins\workspace\DevOps-ILP1-219794_Jenkins\target\classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ DevOps-ILP1-219794 ---
+[WARNING] Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+[INFO] skip non existing resourceDirectory C:\Users\PC-RAHUL\.jenkins\workspace\DevOps-ILP1-219794_Jenkins\src\test\resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ DevOps-ILP1-219794 ---
+[INFO] Changes detected - recompiling the module!
+[WARNING] File encoding has not been set, using platform encoding Cp1252, i.e. build is platform dependent!
+[INFO] Compiling 5 source files to C:\Users\PC-RAHUL\.jenkins\workspace\DevOps-ILP1-219794_Jenkins\target\test-classes
+[INFO] 
+[INFO] --- maven-surefire-plugin:2.12.4:test (default-test) @ DevOps-ILP1-219794 ---
+[INFO] Surefire report directory: C:\Users\PC-RAHUL\.jenkins\workspace\DevOps-ILP1-219794_Jenkins\target\surefire-reports
+
+-------------------------------------------------------
+ T E S T S
+-------------------------------------------------------
+Running com.wipro.devops.test.LoginDemoTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.56 sec
+Running com.wipro.devops.test.ResetPasswordTest
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.129 sec
+Running com.wipro.devops.test.SeleniumLoginDemoTest
+1517698018311	geckodriver	INFO	geckodriver 0.19.1
+1517698018319	geckodriver	INFO	Listening on 127.0.0.1:28831
+1517698019199	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\PC-RAHUL\\AppData\\Local\\Temp\\rust_mozprofile.mlPFnvVDgUMT"
+1517698020057	Marionette	INFO	Enabled via --marionette
+1517698023631	Marionette	INFO	Listening on port 58316
+1517698025076	Marionette	WARN	TLS certificate errors will be ignored for this session
+Feb 03, 2018 4:47:05 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Response: <html><head></head><body>Username Already Exist !!
+</body></html>
+1517698027355	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/SnippetsFeed.jsm :: uninit :: line 125"  data: no] Stack trace: uninit()@resource://activity-stream/lib/SnippetsFeed.jsm:125 < onAction()@resource://activity-stream/lib/SnippetsFeed.jsm:141 < _middleware/</<()@resource://activity-stream/lib/Store.jsm:51 < Store/this[method]()@resource://activity-stream/lib/Store.jsm:30 < uninit()@resource://activity-stream/lib/Store.jsm:153 < uninit()@resource://activity-stream/lib/ActivityStream.jsm:278 < uninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:80 < shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:196 < callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:4406 < observe()@resource://gre/modules/addons/XPIProvider.jsm:2270 < GeckoDriver.prototype.quit()@driver.js:3381 < despatch()@server.js:560 < execute()@server.js:534 < onPacket/<()@server.js:509 < onPacket()@server.js:508 < _onJSONObjectReady/<()@transport.js:500
+1517698027748	geckodriver	INFO	geckodriver 0.19.1
+1517698027756	geckodriver	INFO	Listening on 127.0.0.1:34834
+1517698028321	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\PC-RAHUL\\AppData\\Local\\Temp\\rust_mozprofile.cC0cszwiLQRF"
+1517698029245	Marionette	INFO	Enabled via --marionette
+1517698033218	Marionette	INFO	Listening on port 58357
+1517698034757	Marionette	WARN	TLS certificate errors will be ignored for this session
+Feb 03, 2018 4:47:14 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Response: <html><head></head><body>Login Successful !!
+</body></html>
+[Child 17640, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 17640, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+[Child 17508, Chrome_ChildThread] WARNING: pipe error: 109: file z:/build/build/src/ipc/chromium/src/chrome/common/ipc_channel_win.cc, line 346
+1517698037923	geckodriver	INFO	geckodriver 0.19.1
+1517698037930	geckodriver	INFO	Listening on 127.0.0.1:17549
+1517698038531	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\PC-RAHUL\\AppData\\Local\\Temp\\rust_mozprofile.zzqCv20bzAPv"
+1517698039552	Marionette	INFO	Enabled via --marionette
+1517698043500	Marionette	INFO	Listening on port 58398
+1517698043787	Marionette	WARN	TLS certificate errors will be ignored for this session
+Feb 03, 2018 4:47:24 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Response: <html><head></head><body>Incorrect Username Or Password Entered.. Please Try Again !!
+</body></html>
+1517698047001	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/SnippetsFeed.jsm :: uninit :: line 125"  data: no] Stack trace: uninit()@resource://activity-stream/lib/SnippetsFeed.jsm:125 < onAction()@resource://activity-stream/lib/SnippetsFeed.jsm:141 < _middleware/</<()@resource://activity-stream/lib/Store.jsm:51 < Store/this[method]()@resource://activity-stream/lib/Store.jsm:30 < uninit()@resource://activity-stream/lib/Store.jsm:153 < uninit()@resource://activity-stream/lib/ActivityStream.jsm:278 < uninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:80 < shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:196 < callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:4406 < observe()@resource://gre/modules/addons/XPIProvider.jsm:2270 < GeckoDriver.prototype.quit()@driver.js:3381 < despatch()@server.js:560 < execute()@server.js:534 < onPacket/<()@server.js:509 < onPacket()@server.js:508 < _onJSONObjectReady/<()@transport.js:500
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 29.699 sec
+Running com.wipro.devops.test.SeleniumResetPasswordTest
+1517698047375	geckodriver	INFO	geckodriver 0.19.1
+1517698047395	geckodriver	INFO	Listening on 127.0.0.1:17335
+1517698047965	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\PC-RAHUL\\AppData\\Local\\Temp\\rust_mozprofile.MtKZwa6XbY5R"
+1517698049020	Marionette	INFO	Enabled via --marionette
+1517698052553	Marionette	INFO	Listening on port 58437
+1517698053404	Marionette	WARN	TLS certificate errors will be ignored for this session
+Feb 03, 2018 4:47:33 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Response: <html><head></head><body>Password Reset Successfully !!
+</body></html>
+1517698056238	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/SnippetsFeed.jsm :: uninit :: line 125"  data: no] Stack trace: uninit()@resource://activity-stream/lib/SnippetsFeed.jsm:125 < onAction()@resource://activity-stream/lib/SnippetsFeed.jsm:141 < _middleware/</<()@resource://activity-stream/lib/Store.jsm:51 < Store/this[method]()@resource://activity-stream/lib/Store.jsm:30 < uninit()@resource://activity-stream/lib/Store.jsm:153 < uninit()@resource://activity-stream/lib/ActivityStream.jsm:278 < uninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:80 < shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:196 < callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:4406 < observe()@resource://gre/modules/addons/XPIProvider.jsm:2270 < GeckoDriver.prototype.quit()@driver.js:3381 < despatch()@server.js:560 < execute()@server.js:534 < onPacket/<()@server.js:509 < onPacket()@server.js:508 < _onJSONObjectReady/<()@transport.js:500
+1517698056571	geckodriver	INFO	geckodriver 0.19.1
+1517698056579	geckodriver	INFO	Listening on 127.0.0.1:23683
+1517698057168	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\PC-RAHUL\\AppData\\Local\\Temp\\rust_mozprofile.0RWdeYl6yB2F"
+1517698058399	Marionette	INFO	Enabled via --marionette
+1517698062171	Marionette	INFO	Listening on port 58481
+1517698062420	Marionette	WARN	TLS certificate errors will be ignored for this session
+Feb 03, 2018 4:47:42 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Response: <html><head></head><body>Username Does Not Exist.. Please Try Again!!
+</body></html>
+1517698065398	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/SnippetsFeed.jsm :: uninit :: line 125"  data: no] Stack trace: uninit()@resource://activity-stream/lib/SnippetsFeed.jsm:125 < onAction()@resource://activity-stream/lib/SnippetsFeed.jsm:141 < _middleware/</<()@resource://activity-stream/lib/Store.jsm:51 < Store/this[method]()@resource://activity-stream/lib/Store.jsm:30 < uninit()@resource://activity-stream/lib/Store.jsm:153 < uninit()@resource://activity-stream/lib/ActivityStream.jsm:278 < uninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:80 < shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:196 < callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:4406 < observe()@resource://gre/modules/addons/XPIProvider.jsm:2270 < GeckoDriver.prototype.quit()@driver.js:3381 < despatch()@server.js:560 < execute()@server.js:534 < onPacket/<()@server.js:509 < onPacket()@server.js:508 < _onJSONObjectReady/<()@transport.js:500
+1517698065962	geckodriver	INFO	geckodriver 0.19.1
+1517698065972	geckodriver	INFO	Listening on 127.0.0.1:24048
+1517698066511	mozrunner::runner	INFO	Running command: "C:\\Program Files (x86)\\Mozilla Firefox\\firefox.exe" "-marionette" "-profile" "C:\\Users\\PC-RAHUL\\AppData\\Local\\Temp\\rust_mozprofile.k2vcpVHRhLqd"
+1517698067424	Marionette	INFO	Enabled via --marionette
+1517698071074	Marionette	INFO	Listening on port 58524
+1517698071767	Marionette	WARN	TLS certificate errors will be ignored for this session
+Feb 03, 2018 4:47:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+Response: <html><head></head><body>New and Confirm Password Does Not Match.. Please Try Again!!
+</body></html>
+1517698074760	addons.xpi	WARN	Exception running bootstrap method shutdown on activity-stream@mozilla.org: [Exception... "Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIObserverService.removeObserver]"  nsresult: "0x80004005 (NS_ERROR_FAILURE)"  location: "JS frame :: resource://activity-stream/lib/SnippetsFeed.jsm :: uninit :: line 125"  data: no] Stack trace: uninit()@resource://activity-stream/lib/SnippetsFeed.jsm:125 < onAction()@resource://activity-stream/lib/SnippetsFeed.jsm:141 < _middleware/</<()@resource://activity-stream/lib/Store.jsm:51 < Store/this[method]()@resource://activity-stream/lib/Store.jsm:30 < uninit()@resource://activity-stream/lib/Store.jsm:153 < uninit()@resource://activity-stream/lib/ActivityStream.jsm:278 < uninit()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:80 < shutdown()@resource://gre/modules/addons/XPIProvider.jsm -> jar:file:///C:/Program%20Files%20(x86)/Mozilla%20Firefox/browser/features/activity-stream@mozilla.org.xpi!/bootstrap.js:196 < callBootstrapMethod()@resource://gre/modules/addons/XPIProvider.jsm:4406 < observe()@resource://gre/modules/addons/XPIProvider.jsm:2270 < GeckoDriver.prototype.quit()@driver.js:3381 < despatch()@server.js:560 < execute()@server.js:534 < onPacket/<()@server.js:509 < onPacket()@server.js:508 < _onJSONObjectReady/<()@transport.js:500
+Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 27.755 sec
+Running com.wipro.devops.test.SQLConnectionTest
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.012 sec
+
+Results :
+
+Tests run: 13, Failures: 0, Errors: 0, Skipped: 0
+
+[INFO] 
+[INFO] --- maven-war-plugin:2.2:war (default-war) @ DevOps-ILP1-219794 ---
+[INFO] Packaging webapp
+[INFO] Assembling webapp [DevOps-ILP1-219794] in [C:\Users\PC-RAHUL\.jenkins\workspace\DevOps-ILP1-219794_Jenkins\target\DevOps-ILP1-219794]
+[INFO] Processing war project
+[INFO] Copying webapp resources [C:\Users\PC-RAHUL\.jenkins\workspace\DevOps-ILP1-219794_Jenkins\src\main\webapp]
+[INFO] Webapp assembled in [434 msecs]
+[INFO] Building war: C:\Users\PC-RAHUL\.jenkins\workspace\DevOps-ILP1-219794_Jenkins\target\DevOps-ILP1-219794.war
+[INFO] WEB-INF\web.xml already added, skipping
+[INFO] 
+[INFO] --- maven-install-plugin:2.4:install (default-install) @ DevOps-ILP1-219794 ---
+[INFO] Installing C:\Users\PC-RAHUL\.jenkins\workspace\DevOps-ILP1-219794_Jenkins\target\DevOps-ILP1-219794.war to C:\Users\PC-RAHUL\.m2\repository\com\wipro\devops\DevOps-ILP1-219794\0.0.1-SNAPSHOT\DevOps-ILP1-219794-0.0.1-SNAPSHOT.war
+[INFO] Installing C:\Users\PC-RAHUL\.jenkins\workspace\DevOps-ILP1-219794_Jenkins\pom.xml to C:\Users\PC-RAHUL\.m2\repository\com\wipro\devops\DevOps-ILP1-219794\0.0.1-SNAPSHOT\DevOps-ILP1-219794-0.0.1-SNAPSHOT.pom
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 01:05 min
+[INFO] Finished at: 2018-02-03T16:47:58-06:00
+[INFO] Final Memory: 22M/222M
+[INFO] ------------------------------------------------------------------------
+Finished: SUCCESS
